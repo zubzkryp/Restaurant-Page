@@ -78,26 +78,23 @@ header {
 nav {
   grid-row: 1 / 2;
   background-color: #eeedea;
-  font-size: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  justify-content: center;
   height: 80px;
 }
 
-nav a {
+.left-side button,
+.right-side button,
+.center button {
+  border: none; 
+  background: none; 
+  cursor: pointer;
   color: #A86A2A;
   font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 16px;
   align-self: center;
   justify-self: center;
+  letter-spacing: 1px;
 }
-
-
 
 .center {
   grid-column: 2 / 3;
@@ -105,24 +102,14 @@ nav a {
   font-size: 1.9rem;
   align-self: center;
   font-family: 'Times New Roman', Times, serif;
-  /* font-size: 34px; */
-  margin-bottom: 12px;
   font-weight: 500;
   line-height: 1;
+  
 }
 
-.center a {
-  font-size: 22px;
-  font-weight: 500;
-}
 
-.left-side a,
-.right-side a {
-  color: #8A5A2B
-}
-
-.left-side a:hover,
-.right-side a:hover {
+.left-side button:hover,
+.right-side button:hover {
   color: #2F6DA3;
 }
 
@@ -134,12 +121,10 @@ nav a {
 }
 
 .right-side {
-  /* display: flex; */
-  /* gap: 3rem; */
   grid-column: 3 / 4;
   display: flex;
-  justify-content: center;
-  gap: 20rem;
+  justify-content: space-around;
+  gap: 50px;
 }
 
 #content {

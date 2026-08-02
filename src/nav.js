@@ -11,25 +11,21 @@ export default function av() {
     nav.appendChild(center)
     nav.appendChild(rightSide)
     
-    const restaurantName = document.createElement("a")
+    const restaurantName = document.createElement("button")
     restaurantName.textContent = "EMBER & THYME"
-    restaurantName.href = "#"
 
-    const menu = document.createElement("a")
+    const menu = document.createElement("button")
     menu.textContent = "MENU"
-    menu.href = "#"
-
-    const story = document.createElement("a")
+   
+    const story = document.createElement("button")
     story.textContent = "STORY"
-    story.href = "#"
 
-    const location = document.createElement("a")
+    const location = document.createElement("button")
     location.textContent = "LOCATION"
-    location.href = "#"
 
-    const contact = document.createElement("a")
+    const contact = document.createElement("button")
     contact.textContent = "CONTACT"
-    contact.href = "#"
+    
 
     leftSide.appendChild(story)
     leftSide.appendChild(menu)
