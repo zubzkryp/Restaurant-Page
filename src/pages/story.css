@@ -1,0 +1,5 @@
+#story {
+    grid-row: 2 / 3;
+    background-color: #634e10;
+    min-height: 100vh;
+}
