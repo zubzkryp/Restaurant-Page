@@ -9,6 +9,14 @@ export default {
         path: path.resolve(import.meta.dirname, "dist"),
         clean: true,
     },
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
     devtool: "eval-source-map",
     devServer: {
         watchFiles: ["./src/template.html"],
