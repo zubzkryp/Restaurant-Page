@@ -1,4 +1,6 @@
 import './story.css'
+import frontDoor from '../Images/front-door.jpg'
+import outside from '../Images/outside.jpg'
 
 export default function buildStory() {
     const content = document.querySelector("#content")
@@ -6,12 +8,24 @@ export default function buildStory() {
 
     story.id = "story"
     content.appendChild(story)
-    
-    const images = document.createElement("div")
+
+    const leftStory = document.createElement("div") // creating element for div
+    leftStory.classList.add("left-story") // giving image their own class
+    story.appendChild(leftStory) // appending to story so it has left side
+
+    const image = document.createElement('img')
+    image.classList.add("image")
+    image.src = frontDoor
+    leftStory.appendChild(image)
+
+    const image1 = document.createElement('img')
+    image1.classList.add("image1")
+    image1.src = outside
+    leftStory.appendChild(image1)
     
     const description = document.createElement("p")
     description.classList.add("Description")
-    story.appendChild(images)
+    
     story.appendChild(description)
     const title = document.createElement("h1")
     const first = document.createElement("p")

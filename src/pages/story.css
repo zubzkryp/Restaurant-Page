@@ -1,6 +1,6 @@
 #story {
     grid-row: 2 / 3;
-    background-color: #eeedea;;
+    background-color: #e6e0cf;;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,3 +32,25 @@ p {
     line-height: 1.7;
 }
 
+.left-story {
+    position: relative;
+}
+
+.left-story > .image {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    height: 300px;
+    width: 500px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.left-story > .image1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 500px;
+    border-radius: 25px;
+}

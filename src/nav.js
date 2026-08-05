@@ -13,12 +13,21 @@ export default function av() {
     
     const restaurantName = document.createElement("button")
     restaurantName.textContent = "EMBER & THYME"
+    restaurantName.classList.add('home')
+    restaurantName.addEventListener('click', () => {
+        document.querySelector('#header').scrollIntoView();
+    })
+
 
     const menu = document.createElement("button")
     menu.textContent = "MENU"
    
     const story = document.createElement("button")
+    story.classList.add('story')
     story.textContent = "STORY"
+    story.addEventListener('click', () => {
+        document.querySelector('#story').scrollIntoView();
+    });
 
     const location = document.createElement("button")
     location.textContent = "LOCATION"

@@ -3,6 +3,10 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -61,13 +65,19 @@ h1, h2, h3, h4, h5, h6 {
 header {
   grid-row: 1 / 2;
 }
+
 nav {
   grid-row: 1 / 2;
   background-color: #eeedea;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
+
+
 
 .left-side button,
 .right-side button,
