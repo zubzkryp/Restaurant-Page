@@ -22,6 +22,21 @@ export default function buildStory() {
     image1.classList.add("image1")
     image1.src = outside
     leftStory.appendChild(image1)
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            console.log(entry.isIntersecting)
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show")
+            }
+            else {
+                entry.target.classList.remove("show")
+            }
+        })
+    }, {
+        threshold: 1
+    })
+    observer.observe(leftStory)
     
     const description = document.createElement("p")
     description.classList.add("Description")
