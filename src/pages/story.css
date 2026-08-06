@@ -53,12 +53,14 @@ p {
     height: 300px;
     width: 500px;
     border-radius: 25px;
+    
 }
 
 .left-story > img {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    
 }
 
 .left-story.show > img {

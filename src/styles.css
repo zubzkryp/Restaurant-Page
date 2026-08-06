@@ -136,5 +136,5 @@ nav {
 #content {
   grid-row: 2 / 3;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1fr 1fr;
 }

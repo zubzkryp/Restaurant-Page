@@ -20,8 +20,13 @@ export default function av() {
 
 
     const menu = document.createElement("button")
+    menu.classList.add("menu")
     menu.textContent = "MENU"
-   
+    menu.addEventListener('click', () => {
+        document.querySelector('#menu').scrollIntoView();
+    });
+
+
     const story = document.createElement("button")
     story.classList.add('story')
     story.textContent = "STORY"
