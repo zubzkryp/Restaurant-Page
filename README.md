@@ -24,6 +24,7 @@ npx webpack
 
 ## What I Learned
 
+- How to design pages and colour schemes (Looking at other restaurant pages getting inspiration)
 - Webpack configuration and module bundling
 - Structure for ES modules
 - `IntersectionObserver` for scroll-based animations
