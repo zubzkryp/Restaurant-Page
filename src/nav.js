@@ -35,8 +35,11 @@ export default function av() {
     });
 
     const location = document.createElement("button")
+    location.classList.add('location')
     location.textContent = "LOCATION"
-
+    location.addEventListener('click', () => {
+        document.querySelector('#location').scrollIntoView();
+    })
     const contact = document.createElement("button")
     contact.textContent = "CONTACT"
     
