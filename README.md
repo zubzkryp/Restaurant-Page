@@ -58,3 +58,4 @@ src/
 - Interactive tabbed menu (Starters, Sides, Desserts, Drinks) with dynamically rendered cards
 - Responsive CSS Grid layouts
 - Fixed navigation bar with smooth scroll
+- Sticky header with navigation bars that bring you to the section you want
