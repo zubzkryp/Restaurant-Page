@@ -40,9 +40,13 @@ export default function av() {
     location.addEventListener('click', () => {
         document.querySelector('#location').scrollIntoView();
     })
+
     const contact = document.createElement("button")
+    contact.classList.add('contact')
     contact.textContent = "CONTACT"
-    
+    contact.addEventListener('click', () => {
+        document.querySelector('#contact').scrollIntoView();
+    })
 
     leftSide.appendChild(story)
     leftSide.appendChild(menu)
