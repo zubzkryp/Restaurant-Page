@@ -1,6 +1,6 @@
 #story {
     grid-row: 2 / 3;
-    background-color: #e6e0cf;;
+    background-color: #e6e0cf;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -25,7 +25,7 @@ export default function buildStory() {
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            console.log(entry.isIntersecting)
+            console.log(entry.isIntersecting) // to test if it works
             if (entry.isIntersecting) {
                 entry.target.classList.add("show")
             }
